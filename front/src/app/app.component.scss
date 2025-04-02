@@ -1,0 +1,65 @@
+.components {
+    display: flex;
+    flex-direction: column; /* Иконки идут вертикально */
+    gap: 20px; /* Отступ между иконками */
+}
+.card_content{
+    position: relative;
+}
+.text_content{
+    padding: 64px 0 0 64px;
+}
+.cards{
+    margin: 53px 0 0 64px;
+    width: 1089px;
+}
+.cards2{
+    margin: 53px 0 0 62px;
+    width: 1089px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+    padding: 10px 10px;
+}
+.footer {
+    background-color: #f8f8f874;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0; /* Фиксируем футер внизу */
+}
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    width: 30%;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #0073e6;
+  }
+  
