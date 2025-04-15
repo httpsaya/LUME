@@ -1,27 +1,52 @@
-.components {
-    display: flex;
-    flex-direction: column; /* Иконки идут вертикально */
-    gap: 20px; /* Отступ между иконками */
+a, p, h1, h3, button{
+  cursor: pointer;
 }
-.card_content{
-    position: relative;
+// Навбар
+.navbar{
+  position: relative; /* У родителя должен быть position: relative */
+  height: 99px;
+  width: auto;
+  border: solid 1px rgb(0, 23, 68);
 }
-.text_content{
-    padding: 64px 0 0 64px;
+.nav_list{
+  margin: 35.5px 70px 33.5px 470px;
+  padding-left: 232px;
+  position: absolute;
+  justify-content: space-between;
+  gap: 15px;
+  display: flex; /* Добавь эту строку */
+  height: auto;
+  width: auto; /* Абсолютное позиционирование */
 }
-.cards{
-    margin: 53px 0 0 64px;
-    width: 1089px;
+.navbar a{
+  text-decoration: none;
+  position: relative;
 }
-.cards2{
-    margin: 53px 0 0 62px;
-    width: 1089px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
-    padding: 10px 10px;
+.navbar a::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: rgb(0, 23, 68);
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
 }
+.navbar a:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+a{
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+  margin-right: 8px;
+}
+//футер 
 .footer {
-    background-color: #f8f8f874;
+    background-color: #69696919;
     padding: 40px 0;
     font-family: Arial, sans-serif;
     position: relative;
@@ -62,4 +87,47 @@
   .footer-column ul li a:hover {
     color: #0073e6;
   }
+ 
+// кнопки 
+.auth{
+  margin: 36.5px 23px 33.5px 1150px;
+  position: absolute; 
+  padding-right: 12px;
+  width: 180px;
+  width: 15rem;
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center;
+  display: flex;  /* Включаем flex-контейнер */
+  /* Абсолютное позиционирование */
+}
+button{
+  padding: 2px 16px;
   
+}
+.register{
+  margin-left: 12px;
+  background-color: rgb(0, 23, 68);
+  border-radius: 7px;
+  border: 1px solid #D9D9D9 ;
+  color: #D9D9D9;
+}
+.sign{
+  border-radius: 7px;
+  border: 1px solid rgb(0, 23, 68);
+  background-color: #6e769e;
+  color: rgb(0, 23, 68);
+}
+.signout{
+  border-radius: 7px;
+  border: 1px solid rgb(0, 23, 68);
+  background-color: #6e769e;
+  color: rgb(0, 23, 68);
+}
+button{
+  transition: transform 0.3s ease; /* плавное увеличение и уменьшение */
+
+}
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}

@@ -1,0 +1,133 @@
+a, p, h1, h3, button{
+    cursor: pointer;
+  }
+  .components {
+      display: flex;
+      flex-direction: column; /* Иконки идут вертикально */
+      gap: 20px; /* Отступ между иконками */
+  }
+  .card_content{
+      position: relative;
+  }
+  .text_content{
+      padding: 64px 0 0 64px;
+  }
+  .cards{
+      margin: 53px 0 40px 64px;
+      width: 1089px;
+      height: 840px; 
+      overflow-y: scroll;
+      border: 1px solid #b6bdbd; 
+      padding: 10px;
+      border-radius: 12px;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE и Edge */
+    }
+.cards::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+.card{
+      display: flex;
+      padding: 24px 24px 24px 24px;
+      border-radius: 7px;
+      margin-bottom: 40px;
+      border: 1px solid rgb(0, 23, 68);
+}
+  .body{
+      margin-left: 24px;
+  }
+  .image2{
+      height: 160px;
+      width: 160px;
+      border-radius: 20%;
+      border: 1px solid rgb(0, 23, 68);
+  }
+  .sign2{
+      border: 1px solid rgb(0, 23, 68);
+      font-size: 15px;
+      margin-top: 70px;
+      border-radius: 7px;
+      background-color: #6e769e;
+      color: rgb(0, 23, 68);
+  }
+   
+  a{
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    margin-right: 8px;
+  }
+  .auth{
+    margin: 36.5px 23px 33.5px 1150px;
+    position: absolute; 
+    padding-right: 12px;
+    width: 180px;
+    width: 15rem;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center;
+    display: flex;  /* Включаем flex-контейнер */
+    /* Абсолютное позиционирование */
+  }
+  button{
+    padding: 2px 16px;
+    
+  }
+  .register{
+    margin-left: 12px;
+    background-color: rgb(0, 23, 68);
+    border-radius: 7px;
+    border: 1px solid #D9D9D9 ;
+    color: #D9D9D9;
+  }
+  .sign{
+    border-radius: 7px;
+    border: 1px solid rgb(0, 23, 68);
+    background-color: #6e769e;
+    color: rgb(0, 23, 68);
+  }
+  .signout{
+    border-radius: 7px;
+    border: 1px solid rgb(0, 23, 68);
+    background-color: #6e769e;
+    color: rgb(0, 23, 68);
+  }
+  .image{
+    background-color: #D9D9D9;
+    display: flex;
+    height: 452px;
+    background-image: url("/assets/images/IMG_0176.JPG");
+    background-size: cover; /* Изображение будет покрывать весь контейнер */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Изображение не будет повторяться */
+    border: 1px solid rgb(0, 23, 68)
+  }
+  .text{
+    margin: 50px 0 0 70px;
+  }
+  .images2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 478px;
+  }
+  .between{
+    justify-content: space-between;
+    gap: 88px;
+    display: flex;
+  }
+  .image1{
+    background-color: #D9D9D9;
+    width: 520.5px;
+    height: 350px;
+    border-radius: 5%;
+    border: 1px solid rgb(0, 23, 68)
+  
+  }
+  button{
+    transition: transform 0.3s ease; /* плавное увеличение и уменьшение */
+  
+  }
+  button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+  }
+  

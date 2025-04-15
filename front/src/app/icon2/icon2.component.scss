@@ -3,21 +3,43 @@
     padding: 24px 24px 24px 24px;
     border-radius: 7px;
     margin: 10px 10px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid rgb(0, 23, 68);
 
 }
 .body2{
     margin-left: 24px;
+    display: flex;
+    flex-direction: column;
 }
 .image2{
     height: 160px;
     width: 160px;
+    border-radius: 70%;
+    border: 1px solid rgb(0, 23, 68);
+
+}
+.text{
+    margin-bottom: auto;
 }
 .sign3{
     border-radius: 7px;
-    border: 1px solid gray;
-    background-color: #D9D9D9;
-    color: black;
+    border: 1px solid rgb(0, 23, 68);
+    background-color: rgb(0, 23, 68);
+    color: aliceblue;
     font-size: 15px;
-    margin-top: 70px;
+    margin-top: auto;
+    width: 10rem;
+}
+.cards2{
+    margin: 53px 0 0 62px;
+    width: 1089px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+    padding: 10px 10px;
+}
+.card_content{
+    position: relative;
+}
+.text_content{
+    padding: 64px 0 0 64px;
 }

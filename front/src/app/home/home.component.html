@@ -1,0 +1,45 @@
+<!-- большая картинка -->
+<div class="image">
+    <div class="text">
+      <h1>LUME</h1>
+      <p>Empowering Communities Through Volunteering</p>  
+    </div>
+   </div>
+  
+   <!-- мелкие два -->
+   <div class="images2">
+    <div class="between">
+      <img src="/assets/images/3.jpg" alt="" class="image1">
+      <img src="/assets/images/4.jpg" alt="" class="image1">  
+    </div>
+  </div>
+  
+  <!-- текстовый контент -->
+  <div class="card_content">
+  
+      <div class="text_content">
+        <h1>Volunteering organizations</h1>
+        <p>Through every act, both small and bright,<br>
+          We shine our kindness into light.</p>
+      </div>
+      
+      <div class="cards">
+        <div class="card" *ngFor="let vol of vols">
+          <img [src]="vol.image" alt="" class="image2">
+          
+          <div class="body">
+            <div class="text1">
+              <h3>{{ vol.title }}</h3>
+              <p>{{ vol.desc }}</p>
+            </div>
+            <button *ngIf="!isLoggedIn" class="sign" (click)="openModal()">Apply</button>
+            <button *ngIf="isLoggedIn" class="sign">Apply</button>
+          </div>
+       
+      </div>
+      </div>
+    </div>
+    
+  
+    <!-- третий текстовый контент -->
+    <app-icon2></app-icon2>

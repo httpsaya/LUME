@@ -1,12 +1,24 @@
-<div class="card2">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_vJ1EhmCqCEBzNaDu2OJ8TPVSvDgFkEjJvaIY5lBK2ZeD2I8smsO0RWFR1ZWoSWJjTOQ&usqp=CAU" alt="" class="image2">
-    
-    <div class="body2">
-      <div class="text">
-        <h3>Text</h3>
-        <p>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+<div class="card_content" *ngIf="isLoggedIn">
+
+  <div class="text_content">
+    <h1>Volunteering Events</h1>
+    <p>So come, dear soul, and stand with grace,<br>
+      There’s magic in a helping place.<br>
+      Together, side by side, we’ll grow—<br>
+      A world of care, a gentle glow.</p>
+  </div>
+  <div class="cards2">
+    <div class="card2" *ngFor="let vol2 of vol2s">
+      <img [src]="vol2.image" alt="" class="image2">
+      
+      <div class="body2">
+        <div class="text">
+          <h3>{{ vol2.title }}</h3>
+          <p>{{ vol2.desc }}</p>
+        </div>
+        <button class="sign3">Apply</button>
       </div>
-      <button class="sign3">button</button>
-    </div>
- 
+      
+  </div>
+  </div>
 </div>

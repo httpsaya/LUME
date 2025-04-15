@@ -1,0 +1,14 @@
+<div class="registration-modal" (click)="closeModal2()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span (click)="closeModal2()" class="closebtn"><i class="fa-solid fa-circle-xmark"></i></span>
+
+    <!-- Registration fields -->
+    <input [(ngModel)]="register.username" type="text" placeholder="Username" name="username">
+    <input [(ngModel)]="register.surname" type="text" placeholder="Surname" name="Surname">
+    <input [(ngModel)]="register.password" type="password" placeholder="Password" name="password">
+    <input [(ngModel)]="register.email" type="email" placeholder="Email" name="email">
+
+    <!-- Register button -->
+    <button (click)="registerUser(); closeModal2()" class="registrationbtn">Register User</button>
+  </div>
+</div>

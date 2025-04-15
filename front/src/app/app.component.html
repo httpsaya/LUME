@@ -1,39 +1,28 @@
-<!-- текстовый контент -->
-<div class="card_content">
-
-    <div class="text_content">
-      <h1>Heading</h1>
-      <p>Subheading</p>
-    </div>
-    
-    <div class="cards">
-        <app-icon1></app-icon1>
-        <app-icon1></app-icon1>
-        <app-icon1></app-icon1>
-    </div>
+<!-- навбар -->
+<nav class="navbar">
+  <div class="nav_list">
+    <a [routerLink]="['/']">Home</a>
+    <a [routerLink]="['/problem']">The Problem</a>
+    <a [routerLink]="['/ourwork']">Our Work</a>
+    <a [routerLink]="['/about']">About</a>
+    <a [routerLink]="['/getinvolved']">Get Involved</a>
   </div>
-
-  <!-- второй текстовый контент -->
-  <div class="card_content">
-
-    <div class="text_content">
-      <h1>Heading</h1>
-      <p>Subheading</p>
-    </div>
-    
-    <div class="cards2">
-        <app-icon2></app-icon2>
-        <app-icon2></app-icon2>
-        <app-icon2></app-icon2>
-        <app-icon2></app-icon2>
-        <app-icon2></app-icon2>
-        <app-icon2></app-icon2>
-        <app-icon2></app-icon2>
-        <app-icon2></app-icon2>
-        <app-icon2></app-icon2>
-
-    </div>
+  <div class="auth">
+    <button *ngIf="!isLoggedIn" class="sign" (click)="openModal()">Sign in</button>
+    <button *ngIf="isLoggedIn" (click)="handleLogout()" class="signout">Sign Out</button>
+    <button class="register" (click)="openModal2()">Register</button>
   </div>
+  
+  <!-- Модальное окно для входа -->
+  <app-signin *ngIf="isSigninModalOpen" (close)="closeSigninModal()" (loginSuccess)="handleLoginSuccess()"></app-signin>
+  
+  <!-- Модальное окно для регистрации -->
+  <app-registration *ngIf="isRegistrationModalOpen" (close)="closeRegistrationModal()"></app-registration>
+  
+  
+</nav>
+<router-outlet></router-outlet>
+
   <!-- футер -->
   <div class="footer">
     <div class="footer-container">
@@ -77,4 +66,4 @@
       </div>
     </div>
 </div>
-<router-outlet/>
+

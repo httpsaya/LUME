@@ -2,8 +2,16 @@
 project members: Bekdaulet Aklima 22B031312, Umirkulova Zhansaya 23D030409, Bissembayev Satay 23B031258
 
 # PROJECT DESCRIPTION
-Navigation Aid for the Visually Impaired
+🌟 Welcome to LUME – Where Volunteering Connects Us All!
 
-Our app is designed to assist visually impaired and blind individuals in navigating their surroundings safely and independently. If you ever find yourself lost or unable to reach your destination, our app provides real-time voice guidance, location tracking, and emergency assistance. With intuitive voice commands and smart GPS integration, you can confidently explore your city, find nearby landmarks, and get step-by-step directions.
+Looking to make a difference in your community? You’re in the right place!
 
-Stay safe, stay connected, and navigate with ease!
+LUME is a platform where anyone can post, find, and join volunteering events—whether you're organizing a park clean-up, hosting a food drive, or looking for helping hands at a local school.
+
+🤝 Post Events – Create and share your own volunteering opportunities.
+📝 Join Events – Browse upcoming events and sign up in just a few clicks.
+💬 Connect with Others – Meet people who care about the same causes as you.
+
+No matter your age, background, or experience—there’s a place for you here. Together, we’re building a kinder, more connected world—one event at a time.
+
+Ready to get started? Let’s do good, together.

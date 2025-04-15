@@ -1,0 +1,20 @@
+<div class="registration-modal" (click)="closeModal()">
+    <!-- Внешняя обертка, закрывающая окно при клике за пределами модалки -->
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <!-- Внутренний контейнер, предотвращающий закрытие окна при клике на содержимое -->
+      
+      <!-- Кнопка закрытия модалки -->
+      <span (click)="closeModal()" class="closebtn">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </span>
+  
+      <!-- Поля для ввода данных (например, форма) -->
+      
+    <input [(ngModel)]="register.username" type="text" placeholder="Username" name="username">
+    <input [(ngModel)]="register.password" type="password" placeholder="Password" name="password">
+    <input [(ngModel)]="register.email" type="email" placeholder="Email" name="email">
+      <!-- Кнопка для входа (или другой функционал) -->
+      <button (click)="closeModal(); signinUser()" class="registrationbtn">Sign In</button>
+    </div>
+  </div>
+  
